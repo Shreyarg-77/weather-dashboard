@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <h1>Weather Dashboard</h1>
+      <div class="top-actions">
+        <button id="unit-btn">Show °F</button>
+        <button id="theme-btn">☀️ Light</button>
+      </div>
+    </header>
+
+    <div class="search">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Search a city" autocomplete="off">
+        <ul id="suggestions" class="suggestions" hidden></ul>
+      </div>
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="favorites" class="chips-row" hidden></div>
+    <div id="recent" class="chips-row" hidden></div>
+
+    <p id="message"></p>
+
+    <section id="alerts"></section>
+    <section id="current"></section>
+
+    <h2 class="section-title">7-day forecast</h2>
+    <section id="forecast"></section>
+
+    <footer>Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a></footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
